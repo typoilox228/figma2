@@ -1,0 +1,177 @@
+body{
+font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 53px 147px 0 141px;
+}
+.profile-form {
+ display: grid;
+ grid-template-columns: 1fr repeat(2, auto);
+ grid-template-rows: repeat(5, auto);
+ grid-template-areas:
+ "privet privet privet photo"
+ "message name secname photo"
+ "mail mail mail photo"
+ "phone phone phone photo"
+ "checkbox-1 checkbox-2 checkbox-2 photo"
+ "post post post photo";
+ grid-gap: 15px;
+ padding: 15px;
+}
+.photo {
+ grid-area: photo;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 678px;
+height: 737px;
+left: 732px;
+top: 53px;
+}
+
+input[class="mail"] {
+  width: 100%;
+}
+input[type="text"]:last-child {
+  margin-right: 0;
+}
+input[class="phone"] {
+  width: 168px;
+}
+.privet{
+grid-area: privet;
+}
+.post{
+grid-area: post;
+}
+.message {
+ grid-area: message;
+}
+.name {
+ grid-area: name;
+}
+.secname {
+ grid-area: secname;
+}
+.mail {
+ grid-area: mail;
+}
+.phone {
+ grid-area: phone;
+}
+.post {
+ grid-area: post;
+}
+.checkbox-1 {
+ grid-area: checkbox-1;
+}
+.checkbox-2 {
+ grid-area: checkbox-2;
+}
+.input {
+ padding: 10px;
+ width: 100%;
+ box-sizing: border-box;
+}
+h2{ 
+margin-top:50px;
+width: 444px;
+height: 48px;
+left: 147px;
+top: 233px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height, or 150% */
+color: #333333;
+}
+.message select[name="message"] {
+  font-family: Montserrat;
+  background: #ffffff;
+  border: 1px solid #cfdce3;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  padding: 12px 40px;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+input[type="text"] {
+  font-family: Montserrat;
+  padding: 12px 16px;
+  border: 1px solid #cfdce3;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.3;
+  margin-right: 24px;
+}
+.name{
+width: 132px;
+height: 44px;
+left: 303px;
+top: 327px;
+background: #FFFFFF;
+}
+.secname{
+width: 132px;
+height: 44px;
+left: 459px;
+top: 327px;
+background: #FFFFFF;
+}
+.mail{
+width: 444px;
+height: 44px;
+left: 147px;
+top: 413px;
+background: #FFFFFF;
+}
+.phone{
+width: 444px;
+height: 44px;
+left: 147px;
+top: 499px;
+background: #FFFFFF;
+}
+
+
+img{
+width: 678px;
+height: 737px;
+left: 732px;
+top: 53px;
+margin-left:141px;
+}
+
+button{
+width: 155px;
+height: 44px;
+left: 147px;
+top: 646px;
+background: #06A9B3;
+}
+
+button p {
+position: static;
+width: 91px;
+height: 20px;
+left: 32px;
+top: 12px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+color: #FFFFFF;
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 20px;
+}
